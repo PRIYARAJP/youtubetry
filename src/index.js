@@ -3,12 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+const a=ReactDOM.createRoot(document.getElementById('a'))
+function changes(){
+  a.render (
+    <div>hello</div>
+  )
+}
+a.render (
+  
+  <>
+<div >hiii
 
+</div>
+<button onClick={()=>{changes()}}>onclick</button>
+</>
+)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <>
   <React.StrictMode>
     <App />
   </React.StrictMode>
+  {/* <div>hii</div> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
